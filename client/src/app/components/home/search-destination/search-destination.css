@@ -1,0 +1,62 @@
+
+  
+  .back-image {
+    background: url("../../../../img/search-destination-background.png") no-repeat center center; 
+    height: 650px;
+    width: 100%;
+  }
+
+  .main-title{
+    font-family: "Open Sans", Helvetica, Arial, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48.0px;
+    color: rgba(255, 255, 255, 1.0);
+    text-align: center;
+    letter-spacing: -1.16px;
+    line-height: 65.0px;
+  }
+
+  .jumbotron .jumbotron{
+      background-color: white;
+      height: 250px;
+      width: 100%;
+  }
+
+  .text-search-title {
+    font-family: "Open Sans", Helvetica, Arial, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15.0px;
+    color: rgba(172, 185, 193, 1.0);
+    text-align: center;
+    letter-spacing: -0.36px;
+    line-height: 20.0px;
+  }
+
+  .text-search-input {
+    font-family: "Open Sans", Helvetica, Arial, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20.0px;
+    color: rgba(72, 72, 72, 1.0);
+    text-align: center;
+    letter-spacing: 0.13px;
+    line-height: 27.0px;
+  }
+  
+  .vertical-divider {
+    border-right: 1px solid rgba(172, 185, 193, 1.0);
+  }
+
+  .btn-search {
+    background: rgba(255, 40, 88, 1.0);
+    font-family: "Open Sans", Helvetica, Arial, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24.0px;
+    color: rgba(255, 255, 255, 1.0);
+    text-align: center;
+    letter-spacing: 0.16px;
+    line-height: 33.0px;
+  }

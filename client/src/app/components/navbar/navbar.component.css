@@ -1,0 +1,14 @@
+.navbar-plannertrip {
+    background: rgba(11, 212, 208, 1.0);
+    border-color: transparent;
+}
+
+.navbar-menu-title {
+    font-family: "Open Sans", Helvetica, Arial, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14.0px;
+    color: rgba(255, 255, 255, 1.0);
+    text-align: justify;
+    line-height: 19.0px;
+}

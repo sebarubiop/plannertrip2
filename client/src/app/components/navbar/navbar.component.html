@@ -1,5 +1,5 @@
 <!-- Fixed navbar -->
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-plannertrip">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -8,19 +8,21 @@
          <span class="icon-bar"></span>
          <span class="icon-bar"></span>
        </button>
-      <a class="navbar-brand" routerLink="/">MEAN Stack Blog</a>
+      <a class="navbar-brand" routerLink="/">Plannertrip</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-left">
-        <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a routerLink="/">Home</a></li>
+        <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a routerLink="/" class="navbar-menu-title">RECOMMENDED</a></li>
+        <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a routerLink="/" class="navbar-menu-title">PUBLIC</a></li>
+        <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a routerLink="/" class="navbar-menu-title">DESTINATION</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li *ngIf="authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a routerLink="/dashboard">Dashboard</a></li>
-        <li><a *ngIf="authService.loggedIn()" routerLink="/profile">Profile</a></li>
-        <li><a *ngIf="authService.loggedIn()" routerLink="/blog">Blog</a></li>
-        <li><a *ngIf="!authService.loggedIn()" routerLink="/login">Login</a></li>
-        <li><a *ngIf="authService.loggedIn()" href="#" (click)="onLogoutClick()">Logout</a></li>
-        <li *ngIf="!authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a routerLink="/register">Register</a></li>
+        <li *ngIf="authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a routerLink="/dashboard" class="navbar-menu-title">Dashboard</a></li>
+        <li><a *ngIf="authService.loggedIn()" routerLink="/profile" class="navbar-menu-title">Profile</a></li>
+        <li><a *ngIf="authService.loggedIn()" routerLink="/blog" class="navbar-menu-title">Blog</a></li>
+        <li><a *ngIf="!authService.loggedIn()" routerLink="/login" class="navbar-menu-title">Login</a></li>
+        <li><a *ngIf="authService.loggedIn()" href="#" (click)="onLogoutClick()" class="navbar-menu-title">Logout</a></li>
+        <li *ngIf="!authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a routerLink="/register" class="navbar-menu-title">Register</a></li>
       </ul>
     </div>
     <!--/.nav-collapse -->
