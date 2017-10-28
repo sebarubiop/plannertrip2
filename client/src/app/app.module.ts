@@ -9,6 +9,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { SearchDestinationComponent } from './components/home/search-destination/search-destination.component';
 import { InfoTripComponent } from './components/home/info-trip/info-trip.component';
+import { RecommendedSliderComponent } from './components/home/recommended-slider/recommended-slider.component';
+import { DestinationSliderComponent } from './components/home/destination-slider/destination-slider.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { RegisterComponent } from './components/register/register.component';
 import { AuthService } from './services/auth.service';
@@ -37,7 +39,9 @@ import { PublicProfileComponent } from './components/public-profile/public-profi
     DeleteBlogComponent,
     PublicProfileComponent,
     SearchDestinationComponent,
-    InfoTripComponent
+    InfoTripComponent,
+    RecommendedSliderComponent,
+    DestinationSliderComponent
   ],
   imports: [
     BrowserModule,

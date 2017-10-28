@@ -1,0 +1,21 @@
+.info-trip-caption-title {
+    font-family: "Open Sans", Helvetica, Arial, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20.0px;
+    color: rgba(72, 72, 72, 1.0);
+    text-align: center;
+    letter-spacing: 0.13px;
+    line-height: 27.0px;
+}
+
+.info-trip-caption-description {
+    font-family: "Open Sans", Helvetica, Arial, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15.0px;
+    color: rgba(136, 136, 136, 1.0);
+    text-align: center;
+    letter-spacing: 0.17px;
+    line-height: 20.0px;
+}
