@@ -4,6 +4,16 @@ import { HomeComponent } from './components/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
+import { ExperienceComponent } from './components/trip/experience/experience.component';
+import { MapComponent } from './components/trip/map/map.component';
+import { ItineraryComponent } from './components/trip/itinerary/itinerary.component';
+import { AccommodationComponent } from './components/trip/accommodation/accommodation.component';
+import { TransportComponent } from './components/trip/transport/transport.component';
+import { TripComponent } from './components/trip/trip.component';
+import { DestinationsComponent } from './components/destinations/destinations.component';
+import { PublicItinerariesComponent } from './components/public-itineraries/public-itineraries.component';
+import { RecommendedComponent } from './components/recommended/recommended.component';
+
 import { ProfileComponent } from './components/profile/profile.component';
 import { PublicProfileComponent } from './components/public-profile/public-profile.component';
 import { BlogComponent } from './components/blog/blog.component';
@@ -31,6 +41,34 @@ const appRoutes: Routes = [
   {
     path: 'login',
     component: LoginComponent, // Login Route
+    canActivate: [NotAuthGuard] // User must NOT be logged in to view this route
+  },
+  {
+    path: 'trip',
+    component: TripComponent, // Login Route
+    canActivate: [NotAuthGuard], // User must NOT be logged in to view this route
+    children:[
+      { path: '', redirectTo: 'experience', pathMatch: 'full' },
+      { path: 'experience', component: ExperienceComponent },
+      { path: 'map', component: MapComponent },
+      { path: 'itinerary', component: ItineraryComponent },
+      { path: 'accommodation', component: AccommodationComponent },
+      { path: 'transport', component: TransportComponent }
+    ]
+  },
+  {
+    path: 'recommended',
+    component: RecommendedComponent, // Login Route
+    canActivate: [NotAuthGuard] // User must NOT be logged in to view this route
+  },
+  {
+    path: 'public-itineraries',
+    component: PublicItinerariesComponent, // Login Route
+    canActivate: [NotAuthGuard] // User must NOT be logged in to view this route
+  },
+  {
+    path: 'destinations',
+    component: DestinationsComponent, // Login Route
     canActivate: [NotAuthGuard] // User must NOT be logged in to view this route
   },
   {

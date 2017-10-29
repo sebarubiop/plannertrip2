@@ -7,7 +7,6 @@
   }
 
   .main-title{
-    font-family: "Open Sans", Helvetica, Arial, serif;
     font-weight: 400;
     font-style: normal;
     font-size: 48.0px;
@@ -24,7 +23,6 @@
   }
 
   .text-search-title {
-    font-family: "Open Sans", Helvetica, Arial, serif;
     font-weight: 700;
     font-style: normal;
     font-size: 15.0px;
@@ -35,7 +33,6 @@
   }
 
   .text-search-input {
-    font-family: "Open Sans", Helvetica, Arial, serif;
     font-weight: 700;
     font-style: normal;
     font-size: 20.0px;
@@ -44,14 +41,9 @@
     letter-spacing: 0.13px;
     line-height: 27.0px;
   }
-  
-  .vertical-divider {
-    border-right: 1px solid rgba(172, 185, 193, 1.0);
-  }
 
   .btn-search {
     background: rgba(255, 40, 88, 1.0);
-    font-family: "Open Sans", Helvetica, Arial, serif;
     font-weight: 700;
     font-style: normal;
     font-size: 24.0px;

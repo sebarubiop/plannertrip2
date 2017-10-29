@@ -1,0 +1,33 @@
+<!-- Fixed navbar -->
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false"
+                aria-controls="menu">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div id="menu" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}" class="cool-link">
+                    <a routerLink="/trip/experience" class="menu-trip-title">EXPERIENCE</a>
+                </li>
+                <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}" class="cool-link">
+                    <a routerLink="/trip/map" class="menu-trip-title">MAP</a>
+                </li> 
+                <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}" class="cool-link">
+                    <a routerLink="/trip/itinerary" class="menu-trip-title">ITINERARY</a>
+                </li>
+                <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}" class="cool-link">
+                    <a routerLink="/trip/accommodation" class="menu-trip-title">ACCOMMODATION</a>
+                </li>
+                <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}" class="cool-link">
+                    <a routerLink="/trip/transport" class="menu-trip-title">TRANSPORT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

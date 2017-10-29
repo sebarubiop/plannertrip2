@@ -1,0 +1,35 @@
+.menu-trip-title {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14.0px;
+    color: rgba(128, 128, 128, 1.0);
+    text-align: justify;
+    line-height: 19.0px;
+}
+
+#menu ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cool-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 5px;
+    background: rgb(255, 40, 88);
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+}

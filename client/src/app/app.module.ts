@@ -6,11 +6,24 @@ import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { SearchDestinationComponent } from './components/home/search-destination/search-destination.component';
 import { InfoTripComponent } from './components/home/info-trip/info-trip.component';
 import { RecommendedSliderComponent } from './components/home/recommended-slider/recommended-slider.component';
 import { DestinationSliderComponent } from './components/home/destination-slider/destination-slider.component';
+import { MenuTripComponent } from './components/trip/menu-trip/menu-trip.component';
+import { ExperienceComponent } from './components/trip/experience/experience.component';
+import { MapComponent } from './components/trip/map/map.component';
+import { ItineraryComponent } from './components/trip/itinerary/itinerary.component';
+import { AccommodationComponent } from './components/trip/accommodation/accommodation.component';
+import { TransportComponent } from './components/trip/transport/transport.component';
+import { TripComponent } from './components/trip/trip.component';
+import { DestinationsComponent } from './components/destinations/destinations.component';
+import { PublicItinerariesComponent } from './components/public-itineraries/public-itineraries.component';
+import { RecommendedComponent } from './components/recommended/recommended.component';
+
+
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { RegisterComponent } from './components/register/register.component';
 import { AuthService } from './services/auth.service';
@@ -41,7 +54,18 @@ import { PublicProfileComponent } from './components/public-profile/public-profi
     SearchDestinationComponent,
     InfoTripComponent,
     RecommendedSliderComponent,
-    DestinationSliderComponent
+    DestinationSliderComponent,
+    FooterComponent,
+    MenuTripComponent,
+    ExperienceComponent,
+    TripComponent,
+    MapComponent,
+    ItineraryComponent,
+    AccommodationComponent,
+    TransportComponent,
+    DestinationsComponent,
+    PublicItinerariesComponent,
+    RecommendedComponent
   ],
   imports: [
     BrowserModule,

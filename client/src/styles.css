@@ -1,8 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-.section-title {
+body {
     font-family: "Open Sans", Helvetica, Arial, serif;
-    font-weight: 700;
     font-style: normal;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%; 
+}
+
+.section-title {
+    font-weight: 700;
     font-size: 36.0px;
     color: rgba(72, 72, 72, 1.0);
     text-align: center;
@@ -13,4 +18,18 @@
 img {
     display: block;
     margin: 0 auto;
+}
+
+.vertical-divider {
+    border-right: 1px solid rgba(172, 185, 193, 1.0);
+  }
+
+  .trip-title{
+    font-weight: 700;
+    font-style: normal;
+    font-size: 48.0px;
+    color: rgba(72, 72, 72, 1.0);
+    text-align: left;
+    letter-spacing: -1.16px;
+    line-height: 65.0px;
 }
